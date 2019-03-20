@@ -44,7 +44,7 @@ def processAndSaveTrain(annotations):
 		x2 = min(width, x2+pixels)
 		y2 = min(height, y2+pixels)
 
-		dest_dir = if i in train ? 'data/train' : 'data/vaid'
+		dest_dir = 'data/train' if i in train else 'data/vaid'
 		
 		if not os.path.exists(os.path.join(dest_dir, label)):
     		os.makedirs(os.path.join(dest_dir, label))
